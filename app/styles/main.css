@@ -16,10 +16,17 @@ main .card {
   margin-bottom: 2rem;
 }
 
-/* Navigation*/
+.container.secondary{
+  margin-top:7rem;
+}
 
-.navbar {
+/* Navigation*/
+.navbar{
   background-color: transparent;
+}
+
+.navbar.secondary{
+  background-color: #3F729B;
 }
 
 .scrolling-navbar {
@@ -29,17 +36,17 @@ main .card {
 }
 
 .top-nav-collapse {
-  background-color: #1C2331;
+  background-color: #3F729B;
 }
 
 footer.page-footer {
-  background-color: #1C2331;
-  margin-top: 0;
+  background-color: #3F729B;
+  margin-top:0;
 }
 
 @media only screen and (max-width: 768px) {
   .navbar {
-    background-color: #1C2331;
+    background-color: #3F729B;
   }
 }
 
@@ -54,8 +61,7 @@ footer.page-footer {
   }
 }
 
-.carousel-item,
-.active {
+.carousel-item{
   height: 100%;
 }
 
@@ -64,7 +70,7 @@ footer.page-footer {
 }
 
 .carousel-item:nth-child(1) {
-  background: url("../images/the-dJ.jpg") no-repeat;
+  background: url("../images/the-dj.jpg") no-repeat;
   background-size: cover;
   opacity: 0.4;
 }
