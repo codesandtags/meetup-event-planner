@@ -7,5 +7,9 @@
 
   });
 
+  function validateRegisterForm(){
+    
+  }
+
   // Your custom JavaScript goes here
 })();

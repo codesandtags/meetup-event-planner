@@ -156,3 +156,10 @@ footer.page-footer {
 
 .table-details{
 }
+
+label.error, label.error.active{
+  width: 90%;
+  text-align: right;
+  margin-top:40px;
+  color: red !important;
+}

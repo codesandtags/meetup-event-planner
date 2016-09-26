@@ -111,7 +111,7 @@
 
             <!--Body-->
             <form action="index.html" id="registerForm" role="form">
-              <div class="md-form form-group has-danger">
+              <div class="md-form form-group">
                 <i class="fa fa-user prefix"></i>
                 <input type="text" id="name" class="form-control" autocomplete="on" required>
                 <label for="name">Your Name</label>
@@ -198,6 +198,29 @@
 <!-- SCRIPTS -->
 <!-- JQuery -->
 <script type="text/javascript" src="scripts/jquery-2.2.3.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.validate.min.js"></script>
+
+<script>
+  $.validator.setDefaults({
+    submitHandler: function() {
+      alert("submitted!");
+    }
+  });
+
+  $().ready(function() {
+    // validate signup form on keyup and submit
+    $("#registerForm").validate({
+      rules: {
+        name: "required"
+      },
+      messages: {
+        name: "Please enter your firstname"
+      }
+    });
+  });
+
+</script>
+
 <!-- Bootstrap tooltips -->
 <script type="text/javascript" src="scripts/tether.min.js"></script>
 <!-- Bootstrap -->
